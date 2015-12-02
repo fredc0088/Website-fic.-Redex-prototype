@@ -1,0 +1,403 @@
+/*
+This project was written by me and in my own words staying within the range of what I have learned
+throughout the module, 
+except for referenced resources from different sources. 
+The other mention is some help from a site such http://www.w3schools.com/ concerning attributes which I did not 
+have knowledge of.
+*/
+/* 
+    Created during Apr-2015
+    Author     : Federico Cocco
+*/
+
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+#wrapper{
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+p{
+    font-size: 1em; 
+    font-weight: 500;
+    color: #BCBCBC;
+    font-size: 1.4em;
+}
+
+a{
+    text-decoration: none;
+    color: #ff0000;
+}
+
+h3 {
+    text-align: center;
+    color: #db2f2f;
+}
+
+/***********Links at the top***********/
+
+#uselinks{
+    margin: 0;
+    text-align: right;
+}
+
+#uselinks li{
+    position: relative;
+    left: 2px;
+    display: inline;
+    list-style-type: none;
+}
+
+#uselinks li a{
+    font-size: 1.1em;
+    text-decoration: none; 
+    margin: 5px;
+    color: black;
+}
+
+/***********Navigation bar at the top***********/
+#mainnav ul {
+    margin: auto; 
+    padding: 1px; 
+    overflow:hidden;
+}
+
+#mainnav ul li {
+    font-weight: bolder;
+    margin-top: 5px;
+    margin-left: 50px;
+    float: left;  
+    border-right: none; 
+    list-style-type: none;
+    font-size: 1.6em;
+}
+
+#mainnav ul li a{
+    display: inline;
+    border-right: 20px;
+    color: #db2f2f;
+    border-bottom: 5px;
+    border-top: 5px;
+    text-decoration: none;
+}
+
+/***********Logo and Events/Stories from Redex Coloumn***********/
+
+#bancol{
+    width: 100%;
+	position: relative;
+}
+
+.banner{
+    /**http://www.freewebheaders.com/**/
+    width: 80%;
+    float: left;
+}
+
+.columnevents{ 
+    background: #454545;
+    position: absolute;
+    right: 0px;
+    width: 25%;
+    border-style: groove;
+    border-color: #FFCC99;
+	overflow: visible;
+}
+
+.columnevents ul {
+    display: block;
+    list-style-type: none;
+}
+
+.coloumnevents img {
+    max-height: 115px;
+    max-width: 195px;
+	height: auto;
+	width: auto;
+	position: relative;
+}
+
+
+
+/***********Tagline***********/
+.tagline { 
+	clear: both;
+    margin: 0;
+    padding-top: 1.3em;
+    text-align: center;
+    line-height: 10px;
+    width: 80%;
+    height: 50px;
+    /*http://images.clipartpanda.com/musical-notes-background-music-notes-background-2304.jpg*/
+    background-image: url(img/tagline.jpg);
+    background-position: center;
+    color: grey;
+    font: cursive;
+    font-style: italic; 
+}
+
+/***********Central body***********/
+
+#sitebody{
+    overflow: hidden; 
+    width: 80%;
+}
+
+/***********secondary navigation***********/
+
+.column-left{ 
+    float: left; 
+    width: 20%;
+    position: relative;
+    /* https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbjfeSGcKsb_jWGGoPQ0SzQs0ACsNVzhGtCZq4ATAlwX8KBZZw*/
+    background-image: url(img/music-navbar.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    text-align: center;
+}
+
+#coursenav h3{
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size:20px;
+    color: #999999;
+}
+
+#coursenav ul {
+    margin: auto; 
+    padding: 1px 1px 1px 1px; 
+    overflow:hidden;
+    text-shadow: 2px 2px #000000;
+    opacity: 30;    
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+#coursenav ul li {  
+    border-right: none; 
+    list-style-type: none;
+    font-size:20px;
+    height:80px;
+}
+
+#coursenav ul li a{
+    display: block;
+    color: #cccccc;
+    text-decoration: none;
+}
+
+/***********Content***********/
+
+.column-centre{ 
+    display: inline-block; 
+    width: 70%; 
+    position: relative;
+    text-align: justify;
+    text-justify: inter-word;
+    background-image: url(img/backgroundfake.jpg);
+    background-repeat: repeat-y;
+    background-position: left;
+}
+
+#mainpage.column-centre{
+    background-image: url(img/backgroundfake.jpg), url(img/backind.jpg);
+    background-position: left, top;
+    background-repeat: repeat-y, no-repeat;
+    background-size: auto, cover;
+}
+
+.column-centre ul{
+    display: block;
+}
+
+.column-centre ul li{
+    color: grey;
+    list-style-type: none;
+}
+
+.column-centre h2{
+    color: #BCBCBC;
+    padding: 0 0 0 2em;
+}
+
+.column-centre p{
+    padding: 0 0.5em 0 2em;
+    margin-top: 2px;
+    margin-bottom: 2px; 
+}
+
+/***Main page's content***/
+
+#mainpage h3{ 
+    color: #BCBCBC;
+    font-weight: 500;
+    font-size: 1.8em;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    text-align: center;
+}
+
+ul.list_index li{
+    margin-bottom: 6px;
+}
+
+#mainpage p, ul.list_index li{
+    font-weight: 500;
+    color: #BCBCBC;
+    font-style: normal;
+    font-size: 1.4em;
+    text-shadow: 2px 1px #000000;
+}
+
+/**********courses page's content*****/
+#courses {
+    /**images from http://www.freewebheaders.com/**/
+    overflow: hidden;
+    display: inline-block; 
+    position: relative;
+    text-align: justify;
+    text-justify: inter-word;
+    color: #cccccc;
+}
+
+#courses ul li {
+    font-family:Arial, Helvetica, sans-serif; 
+    border-right: none; 
+    list-style-type: none;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+#courses h3, #courses img {
+    display: block;
+    padding: 0 0 1.5em 0;
+}
+
+img.banner_course{
+    max-width:230px;
+    max-height:85px;
+    width: auto;
+    height: auto;
+}
+
+#courses span {
+    font-weight: bold;
+    color: #660066;
+}
+
+#courses h5 {
+    font-size: 1.2em;
+}
+
+/*******Jobs page's content******/
+
+#jobs li{
+    border: 2px solid red;
+    background-color: #cccccc;
+} 
+
+#jobs h3 {
+    color: #db2f2f;
+}
+
+#jobs p {
+    color: #000000;
+    font-size: 1em;
+}
+
+/***********Breadcrumbs***********/
+
+#breadcrumbs{
+    height: 30px;
+    line-height: 30px;
+    list-style-type: none;
+    display: inline;
+    position: relative;
+    font-size: 1em;
+    padding: 0 0 0 2em;
+    border-bottom: 3em transparent;
+}
+
+#breadcrumbs a {
+    color: #BCBCBC;
+}
+
+.arrow {
+    color: #BCBCBC;
+}
+
+/***********Hover and other effects***********/
+
+#mainnav ul li a:hover {
+    font-size: 115%;
+}
+
+#coursenav ul li a:hover{
+    background-color: #660066;
+}
+
+#courses #guitar:hover ul li, #courses #drum:hover ul li,#courses #rec:hover ul li, #courses #piano:hover ul li, #courses #sax:hover ul li, #courses #violin:hover ul li{ 
+    display: block;
+    text-decoration: none; 
+}
+
+#courses #guitar ul li, #courses #drum ul li, #courses #rec ul li, #courses #piano ul li, #courses #sax ul li, #courses #violin ul li { 
+    display: none; 
+    text-decoration: none;}
+
+/***********Footer***********/
+
+footer {
+    border-top:5px solid #000000;
+    position:relative; 
+    margin: 0;
+    padding: 0;
+}
+
+.footcontacts {
+    float: right;
+}
+
+.footcontacts h3{
+    margin: 0.5em 0 -0.8em 1em;
+}
+
+.footcontacts ul {
+    list-style: none;
+}
+
+.footcontacts ul li{
+    margin: 0;
+    font-size: 1.3em;
+}
+
+.footnote{
+    clear: both;
+}
+
+/****bars'background*******/
+
+#uselinks, #mainnav, footer {
+    background-image: url(img/gradient.jpg);
+    background-position: left;
+}
+
+/****Sitemap***/
+
+#sitemap {
+    text-align: center;
+    float: left;
+}
+
+#sitebody img {
+    height: 367px;
+    width: 535px;
+    position: relative;
+}
+
